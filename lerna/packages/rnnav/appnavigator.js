@@ -21,6 +21,22 @@ const DetailScreen = () => {
   );
 }
 
+const DrawOneScreen = () => {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Draw One Screen</Text>
+    </View>
+  );
+}
+
+const DrawTwoScreen = () => {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Draw Two Screen</Text>
+    </View>
+  );
+}
+
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
@@ -36,8 +52,9 @@ const StackAppNavigator = () => {
 const DrawerAppNavigator = () => {
   return (
     <Drawer.Navigator>
-      <Drawer.Screen name="Home" component={HomeScreen}/>
-      <Drawer.Screen name="Detail" component={DetailScreen}/>
+      <Drawer.Screen name="Stack" component={StackAppNavigator}/>
+      <Drawer.Screen name="DrawOne" component={DrawOneScreen}/>
+      <Drawer.Screen name="DrawTwo" component={DrawTwoScreen}/>
     </Drawer.Navigator>
   )
 }
