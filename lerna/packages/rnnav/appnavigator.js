@@ -4,6 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
+import SidebarComponent from './sideBarComponent';
+
 const HomeScreen = (props) => {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -51,7 +53,7 @@ const StackAppNavigator = () => {
 
 const DrawerAppNavigator = () => {
   return (
-    <Drawer.Navigator>
+    <Drawer.Navigator drawerPosition='left' drawerContent={SidebarComponent}>
       <Drawer.Screen name="Stack" component={StackAppNavigator}/>
       <Drawer.Screen name="DrawOne" component={DrawOneScreen}/>
       <Drawer.Screen name="DrawTwo" component={DrawTwoScreen}/>
