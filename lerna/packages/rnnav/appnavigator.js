@@ -2,6 +2,7 @@ import * as React from 'react';
 import { View, Text, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 const HomeScreen = (props) => {
   return (
@@ -21,8 +22,9 @@ const DetailScreen = () => {
 }
 
 const Stack = createStackNavigator();
+const Drawer = createDrawerNavigator();
 
-const AppNavigator = () => {
+const StackAppNavigator = () => {
     return (
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen}/>
@@ -31,4 +33,14 @@ const AppNavigator = () => {
     );
 }
 
-export default AppNavigator;
+const DrawerAppNavigator = () => {
+  return (
+    <Drawer.Navigator>
+      <Drawer.Screen name="Home" component={HomeScreen}/>
+      <Drawer.Screen name="Detail" component={DetailScreen}/>
+    </Drawer.Navigator>
+  )
+}
+
+// export default StackAppNavigator;
+export default DrawerAppNavigator;
