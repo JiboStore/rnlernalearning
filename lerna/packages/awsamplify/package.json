@@ -1,0 +1,26 @@
+{
+  "name": "awsamplify",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Hakim Hauston <hakim.hauston@singtel.com>",
+  "homepage": "https://github.com/JiboStore/rnlernalearning#readme",
+  "license": "ISC",
+  "main": "lib/awsamplify.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JiboStore/rnlernalearning.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/JiboStore/rnlernalearning/issues"
+  }
+}
