@@ -1,0 +1,47 @@
+{
+    "test": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-amp-test-155510-authRole",
+            "UnauthRoleArn": "arn:aws:iam::217300804996:role/amplify-amp-test-155510-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::217300804996:role/amplify-amp-test-155510-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "amplify-amp-test-155510-deployment",
+            "UnauthRoleName": "amplify-amp-test-155510-unauthRole",
+            "StackName": "amplify-amp-test-155510",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:217300804996:stack/amplify-amp-test-155510/fc7a8a90-56da-11ea-a7e5-02c6c7bea9ac",
+            "AmplifyAppId": "d16jm9fbhgu7qy"
+        },
+        "categories": {
+            "function": {
+                "ampd80216b6d80216b6DefineAuthChallenge": {},
+                "ampd80216b6d80216b6CreateAuthChallenge": {
+                    "CHALLENGEANSWER": "hello"
+                },
+                "ampd80216b6d80216b6VerifyAuthChallengeResponse": {
+                    "RECAPTCHASECRET": "secet"
+                },
+                "ampd80216b6d80216b6CustomMessage": {
+                    "REDIRECTURL": "http://locahost/",
+                    "EMAILSUBJECT": "None",
+                    "EMAILMESSAGE": "Body"
+                },
+                "ampd80216b6d80216b6PostConfirmation": {
+                    "GROUP": "group"
+                },
+                "ampd80216b6d80216b6PreSignup": {
+                    "DOMAINWHITELIST": "singtel.com",
+                    "DOMAINBLACKLIST": ""
+                },
+                "ampd80216b6d80216b6PreTokenGeneration": {}
+            },
+            "auth": {
+                "ampd80216b6d80216b6": {
+                    "facebookAppId": "123456789",
+                    "googleClientId": "123456",
+                    "amazonAppId": "12345",
+                    "hostedUIProviderCreds": "[]"
+                }
+            }
+        }
+    }
+}
