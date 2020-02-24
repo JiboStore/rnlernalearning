@@ -1,15 +1,38 @@
 {
-    "providers": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-rnamplify2-test-175953-authRole",
-            "UnauthRoleArn": "arn:aws:iam::217300804996:role/amplify-rnamplify2-test-175953-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::217300804996:role/amplify-rnamplify2-test-175953-authRole",
-            "Region": "ap-southeast-1",
-            "DeploymentBucketName": "amplify-rnamplify2-test-175953-deployment",
-            "UnauthRoleName": "amplify-rnamplify2-test-175953-unauthRole",
-            "StackName": "amplify-rnamplify2-test-175953",
-            "StackId": "arn:aws:cloudformation:ap-southeast-1:217300804996:stack/amplify-rnamplify2-test-175953/727a7500-56ec-11ea-8119-062b7ab1ef08",
-            "AmplifyAppId": "d1x0vr03aes2c3"
-        }
-    }
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-rnamplify2-test-175953-authRole",
+			"UnauthRoleArn": "arn:aws:iam::217300804996:role/amplify-rnamplify2-test-175953-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::217300804996:role/amplify-rnamplify2-test-175953-authRole",
+			"Region": "ap-southeast-1",
+			"DeploymentBucketName": "amplify-rnamplify2-test-175953-deployment",
+			"UnauthRoleName": "amplify-rnamplify2-test-175953-unauthRole",
+			"StackName": "amplify-rnamplify2-test-175953",
+			"StackId": "arn:aws:cloudformation:ap-southeast-1:217300804996:stack/amplify-rnamplify2-test-175953/727a7500-56ec-11ea-8119-062b7ab1ef08",
+			"AmplifyAppId": "d1x0vr03aes2c3"
+		}
+	},
+	"auth": {
+		"rnamplify20ce850de": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false,
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-rnamplify2-test-175953-deployment/amplify-cfn-templates/auth/rnamplify20ce850de-cloudformation-template.yml",
+				"logicalId": "authrnamplify20ce850de"
+			},
+			"lastPushTimeStamp": "2020-02-24T10:32:42.381Z",
+			"output": {
+				"AppClientSecret": "1n6hbi23qemiom73uin2f740it2qura4acm6qv393b7l9t8p2s1g",
+				"UserPoolId": "ap-southeast-1_2421GlOZW",
+				"AppClientIDWeb": "4i0up41j5ub587fk6fjm0vttcr",
+				"AppClientID": "3hafudjt185hptjj078lu290gf",
+				"IdentityPoolId": "ap-southeast-1:90f22c13-3cd0-41ab-afde-1c9f53d9f2ef",
+				"IdentityPoolName": "rnamplify20ce850de_identitypool_0ce850de__test",
+				"UserPoolName": "rnamplify20ce850de_userpool_0ce850de"
+			},
+			"lastPushDirHash": "NQW15gBCYlJVJMZSkPIauZwCkyE="
+		}
+	}
 }
