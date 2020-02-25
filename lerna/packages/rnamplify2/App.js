@@ -7,9 +7,14 @@ import awsconfig from './aws-exports';
 Amplify.configure(awsconfig);
 
 export default Scene = (props) => {
-  const onPressSignIn = async () => {
-    const user = await Auth.signIn('username4@email.com', 'password');
-    console.log(user);
+  const onPressSignIn = () => {
+    Auth.signIn('username4@email.com', 'password').then(data => {
+      console.log('signIn then');
+      console.log(data);
+    }).catch(err => {
+      console.log('signIn catch');
+      console.log(err);
+    });
   }
   return (
     <View>
